@@ -1,0 +1,254 @@
+body {
+    font-family: sans-serif;
+    background: url("../Assets/Image3.jpg") fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 100px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.nav-bar>a{
+    margin-right: 30px;
+    font-size: 50px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-bar>a:hover{
+    color: rgba(255, 255, 255);
+}
+
+.nav-bar div{
+    font-size: 20px;
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.nav-bar div a{
+    color: red;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.nav-bar div a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    box-shadow: 0 0 5px red,
+    0 0 25px red,
+    0 0 50px red,
+    0 0 100px red;
+}
+
+.error-msg{
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin: 40px;
+    padding: 20px;
+}
+
+.error-msg li{
+    color: red;
+}
+
+.alert-msg{
+    background: rgba(0, 0, 0, 0.6);
+    color: red;
+    margin: 40px;
+    padding: 20px;
+}
+
+.success-msg{
+    background: rgba(0, 0, 0, 0.6);
+    color: green;
+    margin: 40px;
+    padding: 20px;
+}
+
+.info-box{
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.info-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.info-box a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: red;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 135px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.info-box a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    box-shadow: 0 0 5px red,
+    0 0 25px red,
+    0 0 50px red,
+    0 0 100px red;
+}
+
+.info-box .info{
+    margin-bottom: 30px;
+}
+
+.login-box {
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input:not(.remember) {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label:not(.user-box:nth-child(3)>label) {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:not(.remember):focus ~ label,
+.login-box .user-box input:not(.remember):valid ~ label {
+    top: -20px;
+    left: 0;
+    color: red;
+    font-size: 12px;
+}
+
+.login-box .user-box .label_password{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.login-box .user-box input .remember{
+    position: relative;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+}
+
+.login-box .user-box:nth-child(3)>label{
+    color: white;
+}
+
+.login-box form button {
+    background: none;
+    border: none;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: red;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box button:hover {
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px red,
+    0 0 25px red,
+    0 0 50px red,
+    0 0 100px red;
+}
+
+.login-box a{
+    color: red;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.login-box a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    box-shadow: 0 0 5px red,
+    0 0 25px red,
+    0 0 50px red,
+    0 0 100px red;
+}
+
+/* #03e9f4 */
