@@ -1,9 +1,9 @@
 <?php
 
 // Connect to the Database
-$link = new PDO('mysql:host=localhost;dbname=website;charset=utf8',
-    'root',
-    '');
+$link = new PDO('mysql:host=...;dbname=...;charset=utf8',
+#username  '...',
+#password  '...');
 
 // Set PDO so that it displays Errors
 $link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
