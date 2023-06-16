@@ -11,7 +11,7 @@ if (!empty($_POST)){
 
     $user_id = $_SESSION['user_infos']->id;
 
-    $request = $link->prepare('SELECT * FROM users WHERE id = :id AND (modified_at IS NULL OR modified_at <= DATE_SUB(NOW(), INTERVAL 1 MINUTE))');
+    $request = $link->prepare('SELECT * FROM users WHERE id = :id AND (modified_at IS NULL OR modified_at <= DATE_SUB(NOW(), INTERVAL 1 DAY))');
     $request->execute(['id' => $user_id]);
     $result = $request->fetch();
 
